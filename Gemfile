@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 
 gem 'cocoapods', path: './CocoaPods/'
 
-gem 'cocoapods-LSCode', path: './cocoapods-LSCode/'
+gem 'cocoapods-LSSource', path: './cocoapods-LSSource/'
 
 group :debug do
 

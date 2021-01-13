@@ -22,9 +22,9 @@ PATH
       xcodeproj (>= 1.11.1, < 2.0)
 
 PATH
-  remote: cocoapods-LSCode
+  remote: cocoapods-LSSource
   specs:
-    cocoapods-LSCode (0.0.1)
+    cocoapods-LSSource (0.0.1)
 
 GEM
   remote: https://rubygems.org/
@@ -92,7 +92,7 @@ PLATFORMS
 
 DEPENDENCIES
   cocoapods!
-  cocoapods-LSCode!
+  cocoapods-LSSource!
   debase
   ruby-debug-ide
 
