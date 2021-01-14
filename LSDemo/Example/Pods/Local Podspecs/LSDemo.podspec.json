@@ -1,0 +1,22 @@
+{
+  "name": "LSDemo",
+  "version": "0.1.0",
+  "summary": "A short description of LSDemo.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/lhs7248@126.com/LSDemo",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "lhs7248@126.com": "lhs7248@126.com"
+  },
+  "source": {
+    "git": "https://github.com/lhs7248@126.com/LSDemo.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "LSDemo/Classes/**/*"
+}

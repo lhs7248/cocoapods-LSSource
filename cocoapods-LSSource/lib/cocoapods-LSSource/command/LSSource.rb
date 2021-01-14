@@ -1,3 +1,4 @@
+# require 'cocoapods-LSSource/command/Source/LSAdd'
 module Pod
   class Command
     # This is an example of a cocoapods plugin adding a top-level subcommand
@@ -17,9 +18,14 @@ module Pod
     # @todo Create a PR to add your plugin to CocoaPods/cocoapods.org
     #       in the `plugins.json` file, once your plugin is released.
     #
-    class Lssource < Command
-      self.summary = 'Short description of cocoapods-LSSource.'
+    class LSSource < Command
+      require 'cocoapods-LSSource/command/Source/LSAdd'
+      self.summary = '允许二进制能够进行调试'
 
+      # 自定义command的名称
+      self.command ='source'
+
+      self.abstract_command = true
       self.description = <<-DESC
         Longer description of cocoapods-LSSource.
       DESC
@@ -33,7 +39,7 @@ module Pod
 
       def validate!
         super
-        help! 'A Pod name is required.' unless @name
+        # help! 'A Pod name is required.' unless @name
       end
 
       def run
