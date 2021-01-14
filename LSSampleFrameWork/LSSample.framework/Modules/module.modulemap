@@ -1,0 +1,6 @@
+framework module LSSample {
+  umbrella header "LSSample.h"
+
+  export *
+  module * { export * }
+}
