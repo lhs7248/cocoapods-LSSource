@@ -20,6 +20,8 @@ module Pod
     #
     class LSSource < Command
       require 'cocoapods-LSSource/command/Source/LSAdd'
+      # require 'cocoapods-LSSource/command/Source/LSClean'
+      # require 'cocoapods-LSSource/command/Source/LSList'
       self.summary = '允许二进制能够进行调试'
 
       # 自定义command的名称
@@ -33,7 +35,7 @@ module Pod
       self.arguments = 'NAME'
 
       def initialize(argv)
-        @name = argv.shift_argument
+        # @name = argv.shift_argument
         super
       end
 
